@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+.sess{
+	color: white;
+    background: black;
+    height: 37px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.first_space{
+	background: #d3d3d338;
+    height: 37px;
+    padding-right: 1140px;
+    border: 1px solid #80808040;
+}
+
+.city{
+	margin-right: 20px;
+    margin-left: 5px;
+}
+
+.office{
+	margin-right: 20px;
+    margin-left: 5px;
+}
+
+.date{
+	margin-right: 20px;
+    margin-left: 5px;
+}
+
+.time{
+	margin-right: 0px;
+    margin-left: 5px;
+}
+
+.title{
+	margin-left: 70px;
+    margin-right: 30px;
+}
+
+.rep{
+	margin-left: 30px;
+}
+
+.venue{
+	margin-left: 59px;
+}
+
+.summary{
+	margin-left: 37px;
+}
+
+.attachment{
+	margin-left: 33px;
+}
+
+.attach_text{
+	margin-left: 110px;
+}
+
+.first_button{
+	border: none;
+    background-color: white;
+    font-weight: 600;
+    margin-left: 1000px;
+    margin-right: 13px;
+}
+
+.second_button{
+	border: none;
+    background: yellow;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+table > tbody > tr > th {
+	background: black;
+    color: #ffffffd9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 36px;
+    padding-right: 61px;
+}
+
+table > tbody > tr > td{
+	border: 1px solid black;
+	height: 40px;
+}
+
+.footer{
+	margin-top: 30px
+}
+
+</style>
+
+</head>
+<body>
+	<div class="body">
+		<form>
+			<header>
+				<table class="first_row">
+					<thead>
+						<th class="sess">Session</th>
+						<th class="first_space"></th>
+					</thead>
+				</table>
+			</header>
+			<br>
+			<fieldset style="border: 1px solid black;">
+					<div class="First_label_add_session">
+						<p style="font-weight: 600;">Add Session</p>
+						<label>City* </label>
+						<input type="dropdown" name="" class="city" required />
+						<label>Office*</label>
+						<input type="text" name="" class="office" required />
+						<label>Date*</label>
+						<input type="text" name="" class="date" required />
+						<label>Time*</label>
+						<input type="text" name="" class="time" placeholder="From" required />
+						<input type="text" name="" placeholder="To" required />
+						<br>
+						<br>
+					</div>
+					<div class="second_row">
+						<div class="title">
+							<label style="margin-left: -70px;">Title* </label>
+							<input type="text" name="" size="50" class="title" required/>
+							<label>Representative(s)</label>
+							<input type="text" name="" size="50" class="rep">
+							<br>
+							<br>
+						</div>
+					</div>
+						<div class="third_row">
+							<label>Venue*</label>
+							<input type="text" class="venue" name="" size="50">
+							<br>
+							<br>
+						</div>
+						<div class="forth_row">
+							<label>Summary*</label>
+							<textarea rows="3" cols="48" class="summary" placeholder="200 Characters" required /> </textarea>
+							<br>
+							<br>
+						</div>
+						<div class="fifth_row">
+							<label>Attachment</label>
+							<input type="file"  class="attachment" name="">
+							<br>
+							<br>
+							<textarea placeholder="Attached Documents" rows="3" cols="30" class="attach_text"/></textarea>
+						</div>
+						<div>
+
+							<button type="button" class="first_button">CANCEL</button>
+							<button type="button" class="second_button">ADD SESSION</button>
+							
+						</div>
+					
+			</fieldset>
+		</form>
+	</div>
+	<table class="footer">
+		<tr class="table2_first_row">
+			<th></th>
+			<th>Date</th>
+			<th>Time</th>
+			<th>Activity/Session</th>
+			<th>Representative(s)</th>
+			<th>Venue</th>
+			<th>Attachments</th>
+			<th>Edit</th>
+		</tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	</table>
+</body>
+</html>
